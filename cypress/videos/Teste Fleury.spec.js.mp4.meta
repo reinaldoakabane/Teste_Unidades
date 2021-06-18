@@ -1,0 +1,16 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=3234
+END=7330
+title=Teste Fleury Acessar o site e clicar na opção Nossas Unidades
+[CHAPTER]
+TIMEBASE=1/1000
+START=8869
+END=11444
+title=Teste Fleury Selecionar duas facilidades e clicar em detalhes da unidade
+[CHAPTER]
+TIMEBASE=1/1000
+START=9303
+END=14029
+title=Teste Fleury Validação do nome da unidade

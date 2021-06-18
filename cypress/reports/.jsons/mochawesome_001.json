@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-06-18T16:16:11.321Z",
+    "end": "2021-06-18T16:16:24.603Z",
+    "duration": 13282,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0029f696-7472-453b-b5dd-7176abfdd4b6",
+      "title": "",
+      "fullFile": "cypress/integration/Teste.spec.js",
+      "file": "cypress/integration/Teste.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "37e0e4b8-4d16-4f23-b7f1-5f6eacc4f1b5",
+          "title": "Teste Fleury",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar o site e clicar na opção Nossas Unidades",
+              "fullTitle": "Teste Fleury Acessar o site e clicar na opção Nossas Unidades",
+              "timedOut": null,
+              "duration": 5649,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1366, 766); // Altero a resolução da página para um formato melhor visualizado\ncy.visit(\"www.fleury.com.br/\"); // Acesso o site\ncy.wait(2000); // Tempo para carregar a página completamente\ncy.get(':nth-child(16) > #button-title-desktop-header > .buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3').click({\n  force: true\n}); // Clico em Nossas Unidades\ncy.wait(2000);\ncy.viewport(1366, 766);",
+              "err": {
+                "message": "Error: EPERM: operation not permitted, open 'C:\\Users\\Reinaldo\\Desktop\\Cypress\\cypress\\screenshots\\Teste.spec.js\\Teste Fleury -- Acessar o site e clicar na opção Nossas Unidades (failed).png'",
+                "estack": "Error: EPERM: operation not permitted, open 'C:\\Users\\Reinaldo\\Desktop\\Cypress\\cypress\\screenshots\\Teste.spec.js\\Teste Fleury -- Acessar o site e clicar na opção Nossas Unidades (failed).png'\n\n",
+                "diff": null
+              },
+              "uuid": "0a520329-d2c5-49f5-8ae0-10527e39bb92",
+              "parentUUID": "37e0e4b8-4d16-4f23-b7f1-5f6eacc4f1b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Selecionar duas facilidades e clicar em detalhes da unidade",
+              "fullTitle": "Teste Fleury Selecionar duas facilidades e clicar em detalhes da unidade",
+              "timedOut": null,
+              "duration": 3266,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.checkbox-selectcomponentstyle__CheckboxSelectPlaceholderStyled-sc-7ktrvg-2').click(); // Clico para selecionar as facilidades      \ncy.viewport(1366, 766);\ncy.wait(2000);\ncy.get(':nth-child(4) > .fa-check-square').click(); // Clico na facilidade Próximo ao metrô\ncy.get(':nth-child(5) > .fa-check-square').click(); // Clico na facilidade Bicicletário e vaga verde \ncy.get('#button-see-on-map-2-heitor-penteado > .buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3').click(); // Entro em mais detalhes",
+              "err": {},
+              "uuid": "dacf0e5c-5a8d-46f2-a6ef-3aaf05fa598c",
+              "parentUUID": "37e0e4b8-4d16-4f23-b7f1-5f6eacc4f1b5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validação do nome da unidade",
+              "fullTitle": "Teste Fleury Validação do nome da unidade",
+              "timedOut": null,
+              "duration": 2157,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1366, 766);\ncy.wait(2000);\ncy.get('.typographycomponentstyle__H1-sc-1oox73n-1').should('have.text', 'Heitor Penteado'); // Valido que o nome da unidade é o mesmo que apareceu na busca feita",
+              "err": {},
+              "uuid": "4b498332-abe5-4265-a439-1b77ac162d01",
+              "parentUUID": "37e0e4b8-4d16-4f23-b7f1-5f6eacc4f1b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dacf0e5c-5a8d-46f2-a6ef-3aaf05fa598c",
+            "4b498332-abe5-4265-a439-1b77ac162d01"
+          ],
+          "failures": [
+            "0a520329-d2c5-49f5-8ae0-10527e39bb92"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11072,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
