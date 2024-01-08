@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-describe("Teste Fleury", () => {
+describe("Teste Unidade", () => {
     
     it("Acessar o site e clicar na opção Nossas Unidades", () => {
 
